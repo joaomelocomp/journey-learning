@@ -7,13 +7,19 @@ int perimetro(int raio){
     return (2*pi)*raio;
 }
 
+int area(int raio){
+    double pi = 3.14;
+    return pi * raio * raio;
+}
 int main(){
     int r = 0;
     printf("digite o raio ");
     scanf("%d", &r);
 
-    int resultado = perimetro(r);
-    printf("%d", resultado);
+    int p = perimetro(r);
+    int a = area(r);
+
+    printf("resultado: P %d A %d\n", p, a);
 
     return 0;
 }

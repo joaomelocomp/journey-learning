@@ -9,13 +9,19 @@ int perimetro(int raio)
     return (2 * pi) * raio;
 }
 
+int area(int raio)
+{
+    double pi = 3.14;
+    return pi * raio * raio;
+}
 int main()
 {
     int r= 0;
     cout << "digite o raio ";
     cin >> r;
 
-    cout << perimetro(r);
-    
+    cout << perimetro(r) << endl;
+    cout << area(r);
+
     return 0;
 }
