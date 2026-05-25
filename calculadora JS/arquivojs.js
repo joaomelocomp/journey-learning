@@ -4,15 +4,56 @@ function pegarNumero (numero) {
     tela.value += numero
 }
 
-function ac () {
-    tela.value = null
+function pegarOperacao (operacao) {
+    if (tela.value === "") {
+        tela.value = 'Digite um número'
+        setTimeout(() => {
+            tela.value = ""
+        }, 2000)
+        return
+    } else {
+        tela.value += operacao
+    }
 }
 
-function operacoes (numeroUm, numeroDois) {
+function ac () {
+    tela.value = ""
+}
+
+function organizar () {
+    const expressao = tela.value
+    let operacao
+
+    if (expressao.includes("+")){
+        operacao = "+"
+    }
+
+    else if (expressao.includes("-")){
+        operacao = "-"
+    }
+
+    let partes
+
+    partes = expressao.split(operacao)
+
+    let resultado
+    for (let i; i < (partes.length - 1); i++) {
+        if (operacao === " +") {
+            resultado += partes[i]
+        }
+    }
+
+    tela.value = resultado
+}
+
+function calcular (numeroUm, numeroDois, operacao) {
     let resultado = 0
-    switch(opcao) {
-        case 1:
-        resultado = numeroUm / numeroDois
+
+    switch(operacao) {
+        case "+":
+            resultado = Number(numeroUm) + Number(numeroDois)
+            break
+        return resultado
     }
 
 
