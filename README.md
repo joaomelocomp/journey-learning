@@ -1,1 +1,1 @@
-Projetos mais complexos são postados em pastas
+rotina de estudos em diversas técnologias
