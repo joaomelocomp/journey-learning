@@ -1,0 +1,12 @@
+/*Soma de múltiplos entre 1 e n 
+4
+Escreva uma função que receba como entrada um número n, um vetor
+m[], e um número k, e retorne a soma dos números entre 1 e n que
+sejam múltiplos de alguns dos números m[1],...,m[k]. [O(n)]
+
+Ex: se n=17, m=[2,3,5], k=3, então a função deve retornar a soma
+da sequência 2,3,4,5,6,8,9,10,12,14,15,16.*/
+
+int somaVetor(int *m, int n, int k) {
+    
+}
