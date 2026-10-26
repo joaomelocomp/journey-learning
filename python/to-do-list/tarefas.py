@@ -26,4 +26,18 @@ def ler():
 
     print(conteudo)
 
-escrever()
+opcao = 1000
+
+while opcao != 0:
+    print("""
+1 - Escrever tarefa
+2 - Ler tarefas
+0 - Sair
+        """)
+    opcao = int(input())
+
+    if opcao == 1:
+        escrever()
+
+    if opcao == 2:
+        ler()
